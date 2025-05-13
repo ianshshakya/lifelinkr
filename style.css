@@ -1,0 +1,426 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+ a{
+    text-decoration: none;
+ }
+ .lolo{
+     list-style-type:none;
+     width: 50%;
+     margin: 10px;
+ }
+ body {
+     color: #333;
+     background-color: rgb(241, 242, 236);
+     line-height: 1.6;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 50px;
+     background-color: #edf1f5;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .btn {
+     
+     background-color: #fff;
+     border: none;
+     color: rgb(41, 14, 176);
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+    
+     margin-left: 4% ;
+     cursor: pointer;
+     border-radius: 20px;
+ }
+
+ .logo {
+     color: #0052cc;
+     font-size: 24px;
+     font-weight: bold;
+ }
+ nav{
+    width: 45%;
+ }
+
+ nav a {
+     margin-left: 20px;
+     text-decoration: none;
+     color: #646363;
+     font-weight: 500;
+ }
+
+ .hero {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px;
+     background-color: #edf1f5;
+ }
+
+ .hero-text h1 {
+     font-size: 36px;
+     color: #0052cc;
+     margin-bottom: 20px;
+ }
+
+ .hero-text p {
+     margin-bottom: 10px;
+     color: #666;
+ }
+ .hero-text div p i{
+    margin-right:10px; 
+    color: #00b3fe;
+ }
+
+ .demo-form {
+     background-color: #0b2141;
+     display: flex;
+     flex-direction: column;
+     color: #fff;
+     padding: 30px;
+     border-radius: 10px;
+     width: 350px;
+ }
+
+ .demo-form h3 {
+    text-align: center;
+     font-size: 30px;
+     margin-bottom: 20px;
+ }
+
+ .demo-form input,
+ .demo-form select {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     background-color: #0b2141;
+     border: 1px solid #fff;
+     border-radius: 10px;
+ }
+ .demo-form input::placeholder{
+    color: #fff;
+ }
+
+ .demo-form button {
+     background-color: #fff;
+     width: 50%;
+     color: #0052cc;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ .features {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     padding: 50px;
+     text-align: center;
+ }
+
+ .feature-box {
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ .feature-box i{
+    color:#00b3fe;
+    margin-bottom: 30px;
+ }
+ .feature-box h4{
+    color: #0052cc;
+ }
+ .feature-box p{
+    color: #7c7d7e;
+ }
+
+ .why-choose-us,
+ .benefits,
+ .faqs,
+ .art-management,
+ .software-hopping {
+     padding: 50px;
+     margin: 50px;
+     border-radius: 10px;
+     text-align: center;
+     background-color: #fff;
+ }
+ .demo-form-section{
+    width: 100%;
+
+ }
+
+ .why-choose-us h2,
+ .benefits h2,
+ .faqs h2 ,
+ .art-management h2,
+ .software-hopping h2{
+     font-size: 30px;
+     color: #0052cc;
+     margin-bottom: 30px;
+ }
+
+ .reason,
+ .benefit-box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 20px;
+     
+     text-align: left;
+ }
+ .benefit-box{
+    flex-direction: column;
+    width: 33.3%;
+ }
+ .benefit-box p b{
+    color: #0052cc;
+ }
+ .benefit-box img{
+     width: 90%;
+     height: 150px;
+     object-fit: contain;
+     border-radius: 20%;
+ }
+
+ .reason img {
+     width: 100px;
+     height: 100px;
+     margin-right: 20px;
+     border-radius: 20%;
+ }
+.reason div h4{
+    color: #0052cc;
+}
+ .faq {
+     text-align: left;
+     margin-bottom: 20px;
+ }
+ .faqs img{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+ }
+
+.faqs img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.faq-accordion {
+    text-align: left;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.faq-question h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding-bottom: 1rem;
+    color: #555;
+}
+
+
+.faq-item.active .faq-answer {
+    max-height: 200px; 
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+.load-more {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ .faq h4 {
+     color: #0052cc;
+     margin-bottom: 10px;
+ }
+
+
+
+ 
+
+ textarea::placeholder{
+    color: #edf1f5;
+ }
+
+ .footer-demo {
+     background-color: rgb(226, 229, 215);
+     color: #fff;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ 
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+
+    nav a.btn {
+        margin: 10px auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-text, .demo-form {
+        width: 100% !important;
+    }
+
+    .hero-text div {
+        flex-direction: column;
+    }
+
+    .hero-text div div {
+        width: 100% !important;
+    }
+
+    .demo-form {
+        margin-top: 30px;
+    }
+
+    .lolo {
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+
+    section {
+        width: 100% !important;
+        padding: 20px !important;
+        margin: 20px 0 !important;
+    }
+
+    .features {
+        grid-template-columns: 1fr !important;
+        padding: 20px !important;
+    }
+
+    .reason, .benefit-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reason img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .benefits > div {
+        flex-direction: column;
+    }
+
+    .benefit-box {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .demo-form-section .demo-form ul {
+        flex-direction: column;
+    }
+
+    .demo-form-section .demo-form ul li {
+        width: 100% !important;
+    }
+
+    .art-management > div, .software-hopping > div {
+        flex-direction: column;
+    }
+
+    .art-management img, .software-hopping img {
+        margin-bottom: 20px;
+    }
+
+    .footer-demo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-demo > div {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .footer-demo input {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .hero-text, .demo-form {
+        width: 48% !important;
+    }
+
+    nav {
+        width: 60%;
+    }
+}
